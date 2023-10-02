@@ -1,0 +1,343 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  font-family: "Raleway", sans-serif;
+  color: #464646;
+}
+
+figure {
+  margin: 0;
+}
+
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #464646;
+}
+
+.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+nav {
+  height: 88px;
+  margin-bottom: 0.5rem;
+}
+nav ul {
+  height: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  display: flex;
+  align-items: center;
+  /* line-height: ; */
+}
+nav ul li {
+  list-style: none;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+nav ul li:nth-child(2) {
+  flex: 1;
+}
+nav ul a {
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 368px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+header section,
+header figure {
+  height: 100%;
+}
+header section h1,
+header figure h1 {
+  font-weight: bold;
+  font-size: 52px;
+}
+header section p,
+header figure p {
+  font-weight: regular;
+  font-size: 22px;
+}
+header section a,
+header figure a {
+  font-weight: medium;
+  font-size: 16px;
+}
+header figure {
+  display: flex;
+  justify-content: center;
+  height: inherit;
+}
+header img {
+  height: 100%;
+  border-radius: 50%;
+}
+
+.main {
+  width: 100%;
+  background-color: lightblue;
+}
+.main .about {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 383px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.main .about h2 {
+  font-weight: bold;
+  font-size: 32px;
+}
+.main .about p {
+  margin-top: 0;
+  width: 70%;
+  font-weight: regular;
+  font-size: 16px;
+}
+
+.skills,
+.hobbies {
+  background-color: #f5f5f5;
+  height: 284px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  text-align: center;
+  padding-bottom: 1rem;
+}
+.skills h2,
+.hobbies h2 {
+  min-width: 100%;
+}
+.skills article,
+.hobbies article {
+  background-color: white;
+  height: 174px;
+  width: 174px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: flex-end;
+  align-items: flex-start;
+}
+.skills article h3,
+.hobbies article h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 10px 0;
+}
+.skills article img,
+.hobbies article img {
+  height: 37px;
+}
+
+.academica {
+  background-color: #eaf2fd;
+  height: 950px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 2rem;
+}
+.academica article {
+  background-color: white;
+  height: 347px;
+  width: 368px;
+  text-align: center;
+}
+.academica article img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+.academica h2 {
+  text-align: center;
+  min-width: 100%;
+}
+.academica article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.experiencia {
+  height: min-content;
+  padding-bottom: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.experiencia h2 {
+  text-align: center;
+  min-width: 100%;
+  padding: 2rem 0;
+}
+.experiencia article {
+  height: min-content;
+  display: flex;
+  gap: 10px;
+  padding-bottom: 3rem;
+}
+.experiencia article section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.experiencia article img {
+  min-width: 500px;
+  max-width: 800px;
+}
+
+.contacto {
+  display: flex;
+  background-color: #eaf2fd;
+  gap: 30px;
+}
+.contacto .input-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 1rem;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+.contacto .formcontacto__text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.contacto .input-label {
+  color: #A2A2A2;
+}
+.contacto .formcontacto__input {
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  border-bottom: solid 2px rgba(173, 153, 253, 0.862745098);
+  width: 656px;
+  height: 58px;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+.contacto .formcontacto__input::placeholder, .contacto .formcontacto__textarea::placeholder {
+  visibility: hidden;
+}
+.contacto .formcontacto__input:focus, .contacto .formcontacto__textarea:focus {
+  outline: none;
+}
+.contacto .input-label, .contacto .textarea-label {
+  position: absolute;
+  font-family: "Raleway";
+  top: 1.2rem;
+  left: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  transition: all 0.25s;
+}
+.contacto .formcontacto__textarea {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  background-color: #fff;
+  border-radius: 4px;
+  border: none;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  font-family: "Raleway";
+  font-size: 1rem;
+  resize: none;
+}
+.contacto .textarea-label {
+  color: #A2A2A2;
+}
+.contacto .formcontacto__boton {
+  width: 165px;
+  height: 51px;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: #7e70b8;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.2s all;
+  border-radius: 50px;
+}
+.contacto .formcontacto__boton:hover {
+  transform: scale(1.1);
+}
+.contacto .formcontacto__input:not(:placeholder-shown) + .input-label,
+.contacto .formcontacto__input:focus + .input-label,
+.contacto .formcontacto__textarea:not(:placeholder-shown) + .textarea-label,
+.contacto .formcontacto__textarea:focus + .textarea-label {
+  font-size: 0.875rem;
+  top: 0.42rem;
+  transition: all 0.25s;
+}
+.contacto .input-container--invalid {
+  margin-bottom: 0.5rem;
+}
+.contacto .input-container--invalid .formcontacto__input {
+  border: 4px solid #ff0000;
+  border-radius: 7px;
+}
+.contacto .input-container--invalid .input-label {
+  color: #ff0000;
+  font-weight: 700;
+}
+.contacto .input-message-error {
+  display: none;
+}
+.contacto .input-container--invalid .input-message-error {
+  color: #ff0000;
+  font-weight: 700;
+  font-size: 1.1rem;
+  display: block;
+  margin-top: 0.5rem;
+  padding-left: 0.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+}
+footer h2 {
+  font-weight: normal;
+}
+
+/*# sourceMappingURL=style.css.map */
